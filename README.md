@@ -126,7 +126,7 @@ You can get the list of words which contains specified tags. Supported 'tags????
 
 Put some brief description. Just cuz it looks more cool. Those devs rly need to develop their documentation skills tho. _NO CAP._
 
-```javascript
+```json
 // EXAMPLE OF JSON DATA
 {
   "id": "1",
