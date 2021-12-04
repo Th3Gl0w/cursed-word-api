@@ -99,7 +99,7 @@ router.post("/", async (req, res) => {
   const { checkedLang, errorLang } = isLangValid(language);
   const { checkedTag, errorTag } = isTagValid(tag);
   if (errorLang || errorTag)
-    res.json({ error: errorTag ? errorTag : errorLang });
+    return res.json({ error: errorTag ? errorTag : errorLang });
   try {
     const newCurseWord = await CusedWordsTable.create({
       word,
